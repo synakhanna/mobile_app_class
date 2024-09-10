@@ -1,8 +1,24 @@
+.main-title {
+    font-size: 60px;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-decoration: underline;
+    text-decoration-color: #48b2ff;
+}
+
+.blue-title{
+    color: #48b2ff;
+    font-size: 30px;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+.list-text{
+    font-size: 18px;
+}
+
 .card {
     box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
     width: 100%;
     margin: 0 auto;
-    padding: 20px;
 }
 
 .recipe-card-layout {
