@@ -1,4 +1,5 @@
 import cx from 'classnames'
+import { twMerge } from 'tailwind-merge'
 
 export default function Button(props) {
   const {
@@ -13,7 +14,8 @@ export default function Button(props) {
     ...otherProps
   } = props
 
-  const classes = cx(
+  
+  const classes= cx(
     otherProps.className,
     'flex items-center px-8 py-3 border',
     {
