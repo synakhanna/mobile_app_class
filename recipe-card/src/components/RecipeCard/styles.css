@@ -1,56 +1,82 @@
-.main-title {
-    font-size: 60px;
-    font-family: 'Comic Sans MS', sans-serif;
-    text-decoration: underline;
-    text-decoration-color: #48b2ff;
-}
-
-.blue-title{
-    color: #48b2ff;
-    font-size: 30px;
-    font-family: 'Comic Sans MS', sans-serif;
-}
-
-.list-text{
-    font-size: 18px;
-}
-
 .card {
-    box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.3);
-    width: 100%;
-    margin: 0 auto;
-}
-
-.recipe-card-layout {
+    border-radius: 20px;
+    background: #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 20px;
-}
-
-.recipe-image-container {
-    flex: 1;
-    max-width: 50%;
-    padding-right: 20px; /* Add space between image and details */
-}
-
-.recipe-info-container {
-    flex: 1.5;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 1rem;
+    max-width: 40%;
+    margin: 1rem;
+  }
+  
+  .img {
+    width: 25%;
+    height: auto;
+  }
+  
+  .card_text {
     display: flex;
     flex-direction: column;
-}
-
-.recipe-details {
+  }
+  
+  .card_lists {
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;
-}
-
-.recipe-details div {
-    flex: 1;
-    margin-right: 20px;
-}
-
-.recipe-info-container h2, .recipe-info-container p {
-    margin-bottom: 10px;
-}
+    margin-left: 1.5rem;
+  }
+  
+  .recipe_info {
+    margin-left: 1.5rem;
+  }
+  
+  .recipe_title,
+  .list_title {
+    font-family: var(--ff-acme);
+    font-weight: 400;
+  }
+  
+  .recipe_title {
+    margin: 1rem;
+    font-size: 2.5rem;
+    border-bottom: 0.25rem solid var(--c-blue);
+  }
+  
+  .list_title {
+    margin: 0.5rem 0;
+    font-size: 1.625rem;
+    color: var(--c-blue);
+  }
+  
+  .ingredients_list {
+    width: 40%;
+  }
+  
+  .ingredients_list ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  
+  .list_item {
+    display: flex;
+    margin-bottom: 0.75rem;
+  
+    & span {
+      display: block;
+    }
+  
+    & .measure {
+      width: 25%;
+      margin-right: 2rem;
+    }
+  }
+  
+  .instructions_list {
+    width: 50%;
+  
+    & ol {
+      padding-left: 1.25rem;
+    }
+  }
+  

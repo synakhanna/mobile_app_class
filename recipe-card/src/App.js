@@ -1,10 +1,9 @@
-import RecipeCard from './components/RecipeCard'
+import React from 'react'
+import RecipeCard from './RecipeCard'
+import './global.css'
 
-export default function App() {
-  return (
-    // adjacent element but always be wrapped in ONE parent tag
-    <>
-      <RecipeCard />
-    </>
-  )
+function App() {
+  return <RecipeCard />
 }
+
+export default App

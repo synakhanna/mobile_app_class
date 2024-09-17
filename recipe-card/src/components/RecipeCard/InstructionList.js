@@ -1,15 +1,16 @@
-import './styles.css';
+import React from 'react'
+import './styles.css'
 
 export default function InstructionsList(props) {
   const {instructions} = props
   return (
-    <div>
-      <h3 className="blue-title">Instructions</h3>
-      <ul className="list-text">
-        {instructions.map((instruction, index) => {
-          return <li key={index}>{instruction}</li>
-        })}
-      </ul>
+    <div className="instructions_list">
+      <h3 className="list_title">Instructions</h3>
+      <ol>
+        {instructions.map((i, index) => (
+          <li key={index}>{i}</li>
+        ))}
+      </ol>
     </div>
   )
 }
