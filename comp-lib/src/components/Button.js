@@ -15,8 +15,8 @@ export default function Button(props) {
   } = props
 
   
-  const classes= cx(
-    otherProps.className,
+  const classes= twMerge(
+    cx(otherProps.className,
     'flex items-center px-8 py-3 border',
     {
       'bg-blue-500 border-blue-500 text-white': primary,
@@ -34,7 +34,7 @@ export default function Button(props) {
       'text-green-500': outline && success,
       'text-orange-400': outline && danger,
       'text-red-600': outline && warning,
-    }
+    })
   )
 
   return (
