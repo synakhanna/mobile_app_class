@@ -4,15 +4,15 @@ import Button from '../components/Button'
 import Modal from '../components/Modal'
 
 export default function ModalPage() {
-  const [isModalOpen, setIsModalOpen] = useState(true)
-  const handleClick = () => {
-    setIsModalOpen(true)
-  }
+    const [isModalOpen, setIsModalOpen] = useState(true)
+    const handleClick = () => {
+      setIsModalOpen(true)
+    }
 
-  const handleClose = () => {
-    setIsModalOpen(false)
-  }
-
+    const handleClose = () => {
+        setIsModalOpen(false)
+    }
+    
   const actionBar = (
     <>
       <Button
