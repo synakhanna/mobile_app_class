@@ -16,6 +16,9 @@ const NavBar = () => {
       <NavLink to="/modal" className={classes}>
         Modal
       </NavLink>
+      <NavLink to="/input" className={classes}>
+        Input
+      </NavLink>
     </nav>
   )
 }
