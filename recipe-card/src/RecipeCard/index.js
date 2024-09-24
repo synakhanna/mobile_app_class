@@ -19,14 +19,20 @@ const headerStyle = {
 
 const wrapperStyle = {
   margin: '0 auto',
-  maxWidth: '960px',
   padding: '20px'
+};
+
+const footerStyle = {
+  backgroundColor: '#f8f9fa',
+  padding: '20px',
+  textAlign: 'center',
+  fontSize: '1.5em'
 };
 
 export default function RecipeCard() {
   return (
     <div style={wrapperStyle}>
-      <header style={headerStyle}>Recipe App</header>
+      <header style={headerStyle}>Recipe Web-App Made With React.js</header>
       <Card>
         <RecipeImg imgSrc={RECIPE.imgSrc} />
         <div className="card_text">
@@ -38,6 +44,7 @@ export default function RecipeCard() {
           <UserRating />
         </div>
       </Card>
+      <footer style={footerStyle}>Made with ❤️ by Syna Khanna</footer>
     </div>
   )
 }
