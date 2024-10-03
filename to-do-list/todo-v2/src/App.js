@@ -10,23 +10,10 @@ const App = () => {
   // event handler to pass to TodoCreate
   // need to take the title from TodoCreate
   const createTodo = (title) => {
-    console.log('new todo with ', title)
-    // AFTER createtodo is finished, update state here!
-    // thisb is our first time updating an array, slightly more complex!
-    /*NEVER EVER
-    todos.push({id: 1, title: title})
-     setTodos(todos) */
-    // when array or object needs updating in state,
-    // we need to be very careful to do it the react way
-    // create a new array,
-    // copy all existing elements in that array
-    // add in new item at the end!
+
     const updatedTodos = [
       ...todos,
-      // key and value match for title, so we can condense it like this
-      //{id: 123, title: title}
-      // NEW: Unique IDS
-      // math.random, with math.round
+      
       {id: Math.round(Math.random() * 9999999), title},
     ]
     setTodos(updatedTodos)
