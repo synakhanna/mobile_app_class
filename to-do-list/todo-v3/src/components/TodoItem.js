@@ -1,6 +1,7 @@
 import {useState} from 'react'
 import useTodoContext from '../hooks/use-todo-context'
 import TodoEdit from './TodoEdit'
+import './styles.css'
 
 const TodoItem = (props) => {
   const {todo} = props
@@ -27,7 +28,7 @@ const TodoItem = (props) => {
   }
 
   return (
-    <div>
+    <div className="todo-item">
       {content}
       <button onClick={handleEdit}>Edit</button>
       <button onClick={handleDelete}>Delete</button>

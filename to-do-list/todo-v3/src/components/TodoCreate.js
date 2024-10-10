@@ -1,5 +1,6 @@
 import {useState} from 'react'
 import useTodoContext from '../hooks/use-todo-context'
+import './styles.css'
 
 const TodoCreate = () => {
   const {createTodo} = useTodoContext()
@@ -18,7 +19,7 @@ const TodoCreate = () => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>Title:</label>
+      <label>Chores:</label>
       <input type="text" onChange={handleChange} value={title} />=
       <button>Add Todo</button>
     </form>
