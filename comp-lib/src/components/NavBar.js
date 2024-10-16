@@ -19,6 +19,9 @@ const NavBar = () => {
       <NavLink to="/input" className={classes}>
         Input
       </NavLink>
+      <NavLink to="/dropdown" className={classes}>
+        Dropdown
+      </NavLink>
     </nav>
   )
 }

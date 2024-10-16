@@ -5,6 +5,7 @@ import AccordionPage from './pages/AccordionPage'
 import ModalPage from './pages/ModalPage'
 import NavBar from './components/NavBar'
 import InputPage from './pages/InputPage'
+import DropdownPage from './pages/DropdownPage'
 
 // IMPORTANT path here does not take a / before the route name
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
           <Route path="accordion" element={<AccordionPage />} />
           <Route path="modal" element={<ModalPage />} />
           <Route path="input" element={<InputPage />} />
+          <Route path="dropdown" element={<DropdownPage />} />
         </Routes>
       </div>
     </div>
